@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="ٌReceipt Faste, A Talabat Receipt Reader">
+        <meta name="keywords" content="TemRevil, Tem Revil, Revil, Tem, Mohammed Ahmed, POS, System, Food System, Food Point, Foodpoint, Restaurant, Restaurant System, Takeaway, Delivery, Talabat, Food, Lyve Pos, Orders, Order">
+        <meta name="author" content="Tem Revil">
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#3395ff">
+        <meta name="referrer" content="no-referrer">
+    
+        <link rel="icon" href="Background/icon.png" type="image/gif">
+        <title>Receipt Faster</title>
+    
+        <link rel="stylesheet" href="CSS/all.css">
+        <link rel="stylesheet" href="CSS/Default.css">
+        <link rel="stylesheet" href="CSS/Main.css">
+    </head>
+<body>
+    <div class="container">
+        <section class="main-content w flex col center">
+            <div class="flex row between w pad-2">
+                <p class="title">Receipt Here</p>
+                <select id="camera-mode" class="text">
+                    <option value="fit">Fit to Box</option>
+                    <option value="full">Full</option>
+                    <option value="19:6">19:6</option>
+                    <option value="16:9">16:9</option>
+                    <option value="4:3">4:3</option>
+                    <option value="1:1">1:1</option>
+                </select>
+            </div>
+            <div class="cam-box" id="cam"></div>
+            <div class="home-control flex row gap center">
+                <button class="one-btn text" id="upload-img"><i class="fa-solid fa-upload"></i></button>
+                <button class="one-btn text" id="reset-op"><i class="fa-solid fa-rotate-right"></i></button>
+                <button class="one-btn text" id="flip-cam"><i class="fa-solid fa-camera-rotate"></i></button>
+            </div>
+        </section>
+        <section class="receipts-data w flex col off">
+            <p class="title">Receipts</p>
+            <div class="w flex col">
+                <!-- Search input here -->
+                <div class="w flex col" id="receipts-data">
+                    <div>Hello</div>
+                </div>
+            </div>
+        </section>
+    <section class="view-cont flex col gap">
+        <button class="two-btn text active" id="scan">Scan</button>
+        <button class="two-btn text" id="list">List</button>
+    </section>
+    <div class="alert flex row gap between off">
+        <div class="alert-icon"><!-- Alert Icon --></div>
+        <div class="w">
+            <span class="text" id="alert"><!-- Alert Here--></span>
+        </div>
+        <button class="close-alert transition"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <script src="JavaScript/all.js"></script>
+    <script type="module" src="JavaScript/GoogleCloud.js"></script>
+    <script type="module" src="JavaScript/Main.js"></script>
+</body>
+</html>

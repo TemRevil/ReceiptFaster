@@ -1,0 +1,303 @@
+@font-face {
+    font-family: 'Cairo';
+    font-weight: 300;
+    src: url(../Fonts/Cairo/static/Cairo-Regular.ttf);
+}
+@font-face {
+    font-family: 'Cairo';
+    font-weight: 700;
+    src: url(../Fonts/Cairo/static/Cairo-Bold.ttf);
+}
+@font-face {
+    font-family: 'Rubik';
+    font-weight: 300;
+    src: url(../Fonts/Rubik/static/Rubik-Regular.ttf);
+}
+@font-face {
+    font-family: 'Rubik';
+    font-weight: 700;
+    src: url(../Fonts/Rubik/static/Rubik-Bold.ttf);
+}
+@font-face {
+    font-family: 'Exo';
+    font-weight: 300;
+    src: url(../Fonts/Exo/static/Exo2-Regular.ttf);
+}
+@font-face {
+    font-family: 'Exo';
+    font-weight: 700;
+    src: url(../Fonts/Exo/static/Exo2-Bold.ttf);
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --poppy-lighted: #fda4a4ff;
+    --poppy: #ee2d2dff;
+    --alice-blue: #dcf0ffff;
+    --mint-cream: #f4fffdff;
+    --mint-green: #e9fff9ff;
+    --chartreuse: #16db65ff;
+    --emerald: #2fbf71ff;
+    --our-blue-lighted: #bfddffff;
+    --our-blue: #3395ffff;
+    --picton-blue: #4ea5d9ff;
+    --deep-sky-blue: #00bbf9ff;
+    --cerulian: #0075a2ff;
+    --marian-blue: #2a4494ff;
+    --delft-blue: #1d3354ff;
+    --oxford-blue: #011936ff;
+    --raisin-black: #191923ff;
+}
+
+body {
+    width: 100%;
+    background-color: #ebf6ff;
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background-color: #ebf6ff;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #3395ff;
+}
+::selection {
+    background-color: #3396ffb4;
+    color: white;
+}
+
+.w {
+    width: 100% !important;
+}
+.h {
+    height: 100%;
+}
+.pad {
+    padding: 20px;
+}
+.pad-2 {
+    padding: 10px;
+}
+
+.flex {
+    display: flex;
+}
+.row {
+    flex-direction: row;
+}
+.col {
+    flex-direction: column;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+}
+.between {
+    justify-content: space-between;
+}
+.evenly {
+    justify-content: space-evenly;
+}
+.around {
+    justify-content: space-around;
+}
+.flex-end {
+    justify-content: flex-end;
+}
+.gap {
+    gap: 10px;
+}
+
+.off {
+    display: none !important;
+}
+
+.img img {
+    width: 100%;
+}
+
+p {
+    text-transform: capitalize;
+}
+.title {
+    font-family: 'Rubik', 'Exo', 'Cairo';
+    font-weight: 700;
+    font-size: 52px;
+    color: #124;
+    transition: 0.2s 0s linear;
+}
+.align {
+    font-family: 'Exo', 'Rubik', 'Cairo';
+    font-weight: 700;
+    font-size: 32px;
+    color: #124;
+    transition: 0.2s 0s linear;
+}
+.text {
+    font-family: 'Rubik', 'Exo', 'Cairo';
+    font-weight: 100;
+    font-size: 22px;
+    color: #124;
+    transition: 0.2s 0s linear;
+}
+.text-1 {
+    font-family: 'Rubik', 'Exo', 'Cairo';
+    font-weight: 100;
+    font-size: 16px;
+    color: #124;
+    transition: 0.2s 0s linear;
+}
+.text-2 {
+    font-family: 'Rubik', 'Exo', 'Cairo';
+    font-weight: 100;
+    font-size: 26px;
+    color: #124;
+    transition: 0.2s 0s linear;
+}
+.links {
+    text-decoration: none;
+    font-family: 'Cairo', 'Exo', 'Rubik';
+    font-weight: 900;
+    font-size: 22px;
+    color: #124;
+    transition: 0.2s 0s linear;
+}
+.links:hover {
+    text-decoration: solid;
+}
+
+hr {
+    margin: 10px 0px;
+    border: 2px #11224440 solid;
+    border-radius: 20px;
+}
+
+.transition {
+    transition: 0.15s 0s ease-in-out;
+}
+/* ------------------------------------------ */
+/* Navigaitions */
+nav {
+    height: 70px;
+    padding: 10px 20px;
+    position: relative;
+}
+.icon {
+    height: 100%;
+}
+.icon img {
+    width: 100%;
+    height: 100%;
+}
+/* ------------------------------------------ */
+/* Buttons */
+.one-btn {
+    min-width: 100px;
+    min-height: 80px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 42px;
+    background-color: var(--our-blue-lighted);
+    color: var(--our-blue);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.1s 0s ease-in-out;
+}
+.one-btn:hover {
+    background-color: #96cbfd;
+}
+.one-btn:active {
+    scale: 0.9;
+}
+/* Make buttons responsive */
+.one-btn {
+    min-width: min(80px, 20vw) !important;
+    min-height: min(50px, 15vw) !important;
+    font-size: clamp(24px, 4vw, 42px) !important;
+}
+
+.two-btn {
+    min-width: 90px;
+    min-height: 40px;
+    padding: 5px;
+    font-weight: bold;
+    background-color: var(--our-blue-lighted);
+    color: var(--our-blue);
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: 0.1s 0s ease-in-out;
+}
+.two-btn:hover {
+    background-color: #96cbfd;
+}
+.two-btn:active {
+    scale: 0.9;
+}
+.two-btn.active {
+    background-color: var(--our-blue);
+    color: white;
+}
+/* ------------------------------------------ */
+/* Alert Box */
+.alert {
+    max-width: 320px;
+    height: fit-content;
+    min-height: 50px;
+    max-height: 80px;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    padding: 10px;
+    background: var(--our-blue);
+    backdrop-filter: blur(150px);
+    border-radius: 5px;
+    z-index: 10;
+}
+.alert-icon {
+    font-size: 24px;
+    color: white;
+}
+#alert {
+    font-size: 18px;
+    color: white;
+}
+.close-alert {
+    padding: 10px;
+    font-size: 24px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.close-alert:hover {
+    background-color: #ffffff13;
+}
+.close-alert:active {
+    scale: 0.95;
+}
+/* ------------------------------------------ */
+.wh {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    background-color: #0e0e3391;
+    overflow: auto;
+}
